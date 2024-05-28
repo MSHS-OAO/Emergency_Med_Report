@@ -28,8 +28,6 @@ library(rmarkdown)
 wrk.dir <- "J:/deans/Presidents/HSPI-PM/Operations Analytics and Optimization/Projects/System Operations/COVID Pharmacy/Data/Epic Latest Reports/Daily Reports"
 setwd(wrk.dir)
 
-#### (0) Maximize R Memory Size 
-#memory.limit(size = 8000000)
 
 # Import emergency_med_groups data
 emergency_med_groups <- read_excel(paste0(wrk.dir, "/Medication Classification 01-20-2022.xlsx"), col_names = TRUE, na = c("", "NA"))
@@ -43,7 +41,6 @@ inv_repo <- file.info(list.files(path = paste0(wrk.dir,"/REPO/Emergency_Inv_Repo
                                  pattern =paste0("Covid Surge Meds Inventory Repo-", dates_pattern, collapse = "|"  )))
 repo_file <- rownames(inv_repo)[which.max(inv_repo$ctime)]
 inv_repo <- readRDS(repo_file)
-#inv_repo <- read_excel(repo_file)
 inv_repo <- inv_repo %>% distinct()
 
 # Check the most recent ReportDate
