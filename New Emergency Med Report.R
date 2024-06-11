@@ -25,7 +25,7 @@ library(rmarkdown)
 })
 
 # Work Directory
-wrk.dir <- "J:/deans/Presidents/HSPI-PM/Operations Analytics and Optimization/Projects/System Operations/COVID Pharmacy/Data/Epic Latest Reports/Daily Reports"
+wrk.dir <- "/SharedDrive/deans/Presidents/HSPI-PM/Operations Analytics and Optimization/Projects/System Operations/COVID Pharmacy/Data/Epic Latest Reports/Daily Reports"
 setwd(wrk.dir)
 
 
@@ -34,7 +34,7 @@ emergency_med_groups <- read_excel(paste0(wrk.dir, "/Medication Classification 0
 
 
 # Current week date
-dates_pattern <-  seq(Sys.Date()-10, Sys.Date(), by='day')
+dates_pattern <-  seq(Sys.Date()-15, Sys.Date(), by='day')
 
 #Import the latest Med Inv REPO file 
 inv_repo <- file.info(list.files(path = paste0(wrk.dir,"/REPO/Emergency_Inv_Repo"), full.names = T , 
@@ -187,7 +187,7 @@ inv_final_repo <- inv_final_repo %>% distinct()
 
 
 # Save the new repo
-saveRDS(inv_final_repo, paste0(wrk.dir, "/REPO/Emergency_Inv_Repo\\Covid Surge Meds Inventory Repo-", Sys.Date(), ".RDS"))
+saveRDS(inv_final_repo, paste0(wrk.dir, "/REPO/Emergency_Inv_Repo/Covid Surge Meds Inventory Repo-", Sys.Date(), ".RDS"))
 #write_xlsx(inv_final_repo, path = paste0(wrk.dir, "\\REPO\\Emergency_Inv_Repo\\Covid Surge Meds Inventory Repo-", Sys.Date(), ".xlsx"))
 rm(inv_repo, inv_site_summary, inv_daily_df)
 
@@ -369,7 +369,7 @@ med_final_repo <- med_final_repo %>% distinct()
 # Save the new repo
 #write_csv(med_final_repo, path = paste0(wrk.dir, "\\REPO\\Emergency_Med_Repo\\Covid Surge Meds Admin Repo-", Sys.Date(), ".csv"))
 
-saveRDS(med_final_repo  ,paste0("J:/deans/Presidents/HSPI-PM/Operations Analytics and Optimization/Projects/System Operations/COVID Pharmacy/Data/Epic Latest Reports/Daily Reports/REPO/Emergency_Med_Repo/Covid Surge Meds Admin Repo-", Sys.Date(), ".RDS"))
+saveRDS(med_final_repo, paste0(wrk.dir, "/REPO/Emergency_Med_Repo/Covid Surge Meds Admin Repo-", Sys.Date(), ".RDS"))
 
 
 rm(med_repo, new_med_admin, covid_meds_admin, emergency_med_groups)
@@ -381,6 +381,6 @@ setwd("../../..")
 
 #setwd("C:\\Users\\aghaer01\\Downloads\\Code")
 
-save_output <- paste0(getwd(), "\\Daily Reporting Output")
-rmarkdown::render("Code\\Emergency-Meds-Report-Rmarkdown-2022-01-18.Rmd", 
+save_output <- paste0(getwd(), "/Daily Reporting Output")
+rmarkdown::render(paste0(getwd(), "/Code/Emergency-Meds-Report-Rmarkdown-2022-01-18.Rmd"), 
                   output_file = paste("Emergency Meds Report-", Sys.Date()), output_dir = save_output)
