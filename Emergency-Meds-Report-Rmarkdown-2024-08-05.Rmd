@@ -68,14 +68,6 @@ library(rmarkdown)
 })
 ```
 
-<style type="text/css">
-div.main-container {
-  max-width: 1800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-</style>
-
 
 ```{r preprocessing inventory data, echo = FALSE, warning = FALSE, message = FALSE}
 # Work Directory
@@ -439,6 +431,13 @@ saveRDS(med_final_repo, paste0(wrk.dir, "/REPO/Emergency_Med_Repo/Covid Surge Me
 rm(med_repo, new_med_admin, covid_meds_admin, emergency_med_groups)
 
 ```
+<style type="text/css">
+div.main-container {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
 
 
 ```{r mapping, echo = FALSE, warning = FALSE, message = FALSE}
