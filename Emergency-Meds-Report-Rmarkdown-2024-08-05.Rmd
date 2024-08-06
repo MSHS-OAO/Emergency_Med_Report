@@ -58,7 +58,6 @@ library(knitr)
 library(kableExtra)
 library(grid)
 library(gridExtra)
-library(ggpubr)
 library(tcltk)
 library(data.table)
 library(tidyverse)
@@ -66,6 +65,7 @@ library(plotly)
 library(rmarkdown)
 #library(pandoc)
 # library(tidyr)
+  
 })
 ```
 
