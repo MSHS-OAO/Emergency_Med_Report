@@ -1088,13 +1088,13 @@
       "Repository": "https://packagemanager.posit.co/cran/__linux__/focal/2023-04-14",
       "description": {
         "Package": "digest",
-        "Author": "Dirk Eddelbuettel <edd@debian.org> with contributions\n by Antoine Lucas, Jarek Tuszynski, Henrik Bengtsson, Simon Urbanek,\n Mario Frasca, Bryan Lewis, Murray Stokely, Hannes Muehleisen,\n Duncan Murdoch, Jim Hester, Wush Wu, Qiang Kou, Thierry Onkelinx,\n Michel Lang, Viliam Simko, Kurt Hornik, Radford Neal, Kendon Bell,\n Matthew de Queljoe, Ion Suruceanu, Bill Denney, Dirk Schumacher,\n Winston Chang, Dean Attali, and Michael Chirico.",
-        "Version": "0.6.36",
-        "Date": "2024-06-23",
+        "Author": "Dirk Eddelbuettel <edd@debian.org> with contributions\n by Antoine Lucas, Jarek Tuszynski, Henrik Bengtsson, Simon Urbanek,\n Mario Frasca, Bryan Lewis, Murray Stokely, Hannes Muehleisen,\n Duncan Murdoch, Jim Hester, Wush Wu, Qiang Kou, Thierry Onkelinx,\n Michel Lang, Viliam Simko, Kurt Hornik, Radford Neal, Kendon Bell,\n Matthew de Queljoe, Ion Suruceanu, Bill Denney, Dirk Schumacher,\n and Winston Chang.",
+        "Version": "0.6.31",
+        "Date": "2022-12-10",
         "Maintainer": "Dirk Eddelbuettel <edd@debian.org>",
         "Title": "Create Compact Hash Digests of R Objects",
-        "Description": "Implementation of a function 'digest()' for the creation of hash\n digests of arbitrary R objects (using the 'md5', 'sha-1', 'sha-256', 'crc32',\n 'xxhash', 'murmurhash', 'spookyhash', 'blake3', 'crc32c', 'xxh3_64', and 'xxh3_128'\n algorithms) permitting easy comparison of R language objects, as well as functions\n such as'hmac()' to create hash-based message authentication code. Please note that\n this package is not meant to be deployed for cryptographic purposes for which more\n comprehensive (and widely tested) libraries such as 'OpenSSL' should be used.",
-        "URL": "https://github.com/eddelbuettel/digest,\nhttps://dirk.eddelbuettel.com/code/digest.html",
+        "Description": "Implementation of a function 'digest()' for the creation of hash\n digests of arbitrary R objects (using the 'md5', 'sha-1', 'sha-256', 'crc32',\n 'xxhash', 'murmurhash', 'spookyhash' and 'blake3' algorithms) permitting easy\n comparison of R language objects, as well as functions such as'hmac()' to\n create hash-based message authentication code. Please note that this package\n is not meant to be deployed for cryptographic purposes for which more\n comprehensive (and widely tested) libraries such as 'OpenSSL' should be\n used.",
+        "URL": "https://github.com/eddelbuettel/digest,\nhttp://dirk.eddelbuettel.com/code/digest.html",
         "BugReports": "https://github.com/eddelbuettel/digest/issues",
         "Depends": "R (>= 3.3.0)",
         "Imports": "utils",
@@ -1102,10 +1102,10 @@
         "Suggests": "tinytest, simplermarkdown",
         "VignetteBuilder": "simplermarkdown",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-06-23 14:31:46 UTC; edd",
+        "Packaged": "2022-12-10 18:30:14 UTC; edd",
         "Repository": "CRAN",
-        "Date/Publication": "2024-06-23 16:40:02 UTC",
-        "Built": "R 4.2.3; x86_64-pc-linux-gnu; 2024-08-06 14:52:44 UTC; unix"
+        "Date/Publication": "2022-12-11 07:40:02 UTC",
+        "Built": "R 4.2.3; x86_64-pc-linux-gnu; 2023-04-26 16:08:39 UTC; unix"
       }
     },
     "dplyr": {
@@ -4358,7 +4358,7 @@
   },
   "files": {
     "Emergency-Meds-Report-Rmarkdown-2024-08-05.Rmd": {
-      "checksum": "ae0f21ea43fb6be0a58fa0b18f638b71"
+      "checksum": "3efedb0865782a62cb78aef934ee03a3"
     },
     "Mount_Sinai_Logo_H.png": {
       "checksum": "2947092f1b4ba7d991e336025e6b44d7"

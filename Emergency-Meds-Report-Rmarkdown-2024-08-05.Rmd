@@ -112,7 +112,7 @@ inv_list <- file.info(list.files(path= paste0(wrk.dir,"/New Inventory"), full.na
                                  pattern = paste0("COVID Surge Med WINV Balance_", dates_pattern, collapse = "|")))
 inv_list <- inv_list[with(inv_list, order(as.POSIXct(ctime), decreasing = TRUE)), ]
 
-
+#unmark this one if you need to run the code and remove line 119
 #dif_time <- difftime(max(inv_repo$ReportDate), Sys.Date()-1)
 
 # unmark the previous line if you want to update the code 
