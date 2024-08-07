@@ -93,7 +93,7 @@ inv_repo <- readRDS(repo_file)
 inv_repo <- inv_repo %>% distinct()
 
 # Check the most recent ReportDate
-max(inv_repo$ReportDate)
+#max(inv_repo$ReportDate)
 
 # Change the date format
 inv_repo <- inv_repo %>% mutate(ReportDate = as.Date(ReportDate))
@@ -261,7 +261,7 @@ med_repo <- med_repo %>% distinct()
 
 
 # check the Admin Date
-max(med_repo$Admin_Date)
+#max(med_repo$Admin_Date)
 
 # Change Date format
 med_repo <- med_repo %>% mutate(Admin_Date= as.Date(Admin_Date))
