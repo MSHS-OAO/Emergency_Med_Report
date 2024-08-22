@@ -80,10 +80,12 @@ emergency_med_groups <- read_excel(paste0(wrk.dir, "/Medication Classification 0
 
 
 # Current week date
-#dates_pattern <-  seq(Sys.Date()-15, Sys.Date(), by='day')
+#dates_pattern <-  seq(Sys.Date()-10, Sys.Date(), by='day')
 
 # unmark the previous line if you decided to run the code again
 dates_pattern <- seq(as.Date("2024-06-10"), as.Date("2024-06-20"), by = "days")
+
+# if you decided to run the code again, you need to create a new inv_repo and med_repo data. Skip everything related to these data and consider a new count value based on the data you have. Run the remaining part of the code. 
 
 #Import the latest Med Inv REPO file 
 inv_repo <- file.info(list.files(path = paste0(wrk.dir,"/REPO/Emergency_Inv_Repo"), full.names = T , 
